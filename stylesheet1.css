@@ -1,0 +1,373 @@
+html {
+  height:100%;
+}
+body {
+  font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic' ;
+  margin:0;
+  padding:0;
+  background-color: rgba(240, 250, 255, 0.5);
+  height:100%;
+}
+
+.wrapper {
+  width: 100%;
+  position:relative;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+header{
+  width:100%;
+  height:75px;
+  background-color: rgba(0,0,0,0.8);
+  position:fixed;
+  top:0;
+  z-index: 10px;
+}
+
+
+
+.head-wrapper{
+  opacity:0.9;
+}
+
+/*
+.profile-icon{
+  border-radius: 50%;   角丸半径を50%にする(=円形にする)
+  width:  40px;        ※縦横を同値に
+  height: 40px;        ※縦横を同値に
+  object-fit: cover;
+  float:left;
+  margin:0 20px 20px 0;
+}
+*/
+
+.header-icon{
+  color:white;
+  font-size:30px;
+  margin:20px 40px 0 40px;
+  float: left;
+  text-decoration: none;
+/*  font-weight: bold; */
+/*  font-family: 'Meiryo'; */
+}
+
+.header-menu{
+  width: 70%;
+  float: left;
+  line-height: 75px;
+  margin:10px 0px 10px 0px;
+  display:flex;
+  justify-content:space-around;
+}
+
+.header-menu a{
+  cursor:pointer;
+}
+
+.header-menu a:hover{
+  opacity:0.6;
+}
+
+
+/*
+.menu-icon{
+  color:white;
+  font-size:20px;
+  float:right;
+  margin:30px 30px 0px 0px;
+  cursor: pointer;
+}
+
+.menu-icon:hover{
+  opacity:0.6;
+}
+
+.menu-icon2{
+  color:white;
+  font-size:20px;
+  float:right;
+  margin:30px 30px 0px 0px;
+  cursor: pointer;
+}
+
+.menu-icon2:hover{
+  opacity:0.6;
+}
+
+*/
+
+li{
+  list-style:none;
+}
+
+.thesis-list li{
+  list-style: disc;
+  line-height: 40px;
+}
+
+.thesis-notes{
+  text-align: center;
+}
+
+.thesis-notes ul{
+  display: inline-block;
+  text-align: left;
+}
+
+.header-menu li{
+  float: left;
+  width: 25%;
+}
+
+.header-menu a{
+  color: white;
+  font-size: 20px;
+}
+
+.header-active a{
+  border-bottom:2px solid #C0C0C0;
+  padding-bottom:2px;
+}
+
+.contents-wrapper{
+/*  height:800px; */
+  height: 80%;
+  width:100%;
+  margin:200px auto;
+  padding-bottom: 60px;
+}
+
+.contents i{
+  padding:0 15px;
+}
+
+.introduction{
+  margin:30px auto 10px auto;
+  width: 80%;
+  text-align: center;
+}
+
+.news{
+  margin:70px auto 60px auto;
+  width: 80%;
+  overflow: hidden;
+}
+
+.news h2{
+  border-bottom:1px solid #C0C0C0;
+  padding-bottom:10px;
+  font-weight: bold;
+}
+
+.news h3{
+  border-bottom:1px solid #C0C0C0;
+  padding-bottom:10px;
+  font-weight: bold;
+}
+
+.news-list{
+  text-align: center;
+  padding-top: 20px;
+}
+
+.news iframe{
+  width:70%;
+  height: 200px;
+}
+
+dl{
+  background:#eee;
+  padding:10px;
+  width:auto;
+  height:100%;
+}
+
+dt{
+  color:navy;
+  font-weight:bold;
+  padding:0 10px 0 5px;
+  width:20%;
+  float:left;
+  margin-bottom:7px;
+}
+
+dd{
+  color:black;
+  margin-bottom:7px;
+}
+
+
+.second{
+  clear: both;
+  margin: 200px auto 20px auto;
+}
+
+.lectures{
+  margin:50px auto 20px auto;
+  width:80%;
+}
+
+.lectures h2{
+  border-bottom:1px solid #C0C0C0;
+  padding-bottom:10px;
+  font-weight: bold;
+}
+
+.textbook{
+  float:left;
+  width: 30%;
+}
+
+.textbook2{
+  float:left;
+  width: 30%;
+/*  display: flex;
+  justify-content:space-around; */
+}
+
+.textbook-image2 img{
+  width:40%;
+  margin:10px 5px 0px 30px;
+  float: left;
+}
+
+.textbook-image2-2 img{
+  width:40%;
+  margin:10px 10px 0px 0px;
+  float: right;
+}
+
+.teacher-image img{
+  width:45%;
+  margin:10px 10px 0px 90px;
+}
+
+.news-block{
+  float:left;
+  width: 30%;
+/*  display: flex;
+  justify-content:space-around; */
+}
+
+.news-image img{
+  width:80%;
+  margin:10px 10px 0px 10px;
+}
+
+.news-script{
+  overflow: hidden;
+  margin-left: 30px;
+  line-height: 200%;
+}
+
+.news p{
+  font-size: 15px;
+  float:right;
+  margin-right:50px;
+}
+
+.teacher-cv-item{
+  overflow: hidden;
+}
+
+.teacher-cv-item p{
+  font-weight: bold;
+  float:left;
+}
+
+.teacher-cv-item ul{
+  margin-left: 30px;
+}
+
+.lec2-explains{
+  float: right;
+  width: 60%;
+  margin-left:10px;
+  line-height: 200%;
+}
+
+.text-examples{
+  position:relative;
+}
+
+.text-examples p{
+  margin-left: 15px;
+  font-size:20px;
+  font-weight:bold;
+}
+
+.text-examples ul{
+  position:absolute;
+  left:5px;
+  top:20px;
+}
+
+.lec-explains{
+  float: right;
+  width: 60%;
+  margin-left:10px;
+  line-height: 200%;
+}
+
+.textbook-image3{
+  width:45%;
+  margin:10px 10px 0px 90px;
+}
+
+.lecture-image3{
+  width:105%;
+  margin:12px 10px 0px 40px;
+}
+
+.third{
+  clear: both;
+  margin: 290px auto 200px auto;
+  padding-bottom: 0px
+  overflow: hidden;
+}
+
+.third h2{
+  margin-top: 325px;
+}
+
+
+footer{
+  clear:both;
+  width:100%;
+  height:65px;
+  border-top:3px black solid;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer-icon{
+  font-size:13px;
+  font-weight: bold;
+  color: black;
+  float:right;
+  margin-right:50px;
+}
+
+.graduate-thesis h3{
+  border-bottom:1px solid #C0C0C0;
+  padding-bottom:10px;
+  font-weight: bold;
+}
+
+.thesis-list-head {
+    padding: 4px 5px 4px 10px;
+    margin: 0px 0px -10px 0px;
+    border: solid 1.5px #C0C0C0;
+    width: 50px;
+    border-radius: 3px;
+}
+.thesis-list-head h4 {
+    margin: 0;
+    padding: 0;
+    width: 50px;
+}
